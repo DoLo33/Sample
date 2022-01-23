@@ -1,0 +1,526 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,.7), rgba(4,9,30,.7)), url("/photos/Max4.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.sub-header{
+    height: 80vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,.5), rgba(4,9,30,.5)), url(
+    "/photos/Max7.jpeg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 250px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #76b5c5;
+    display: block;
+    margin: auto;
+    transition: .5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.text-box{
+    width: 90%;
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 62px;
+    line-height: 60px;
+    font-weight: 500;
+}
+
+.text-box p{
+    margin: 15px 0 40px;
+    font-size: 20px;
+}
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 12px 34px;
+    font-size: 17px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    transition: 1s;
+    border-radius: 10px;
+}
+
+.hero-btn:hover{
+    border: 1px solid #76b5c5;
+    background: #76b5c5;
+    color: #063970;
+}
+
+.social{
+    width: 90%;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    justify-content: end;
+}
+
+.sub-social{
+    width: 90%;
+    display: flex;
+    position: absolute;
+    top: 70%;
+    justify-content: end;
+}
+
+.social .fa{
+    color: #ffffff;
+    padding: 20px;
+    margin-bottom: 40px;
+    font-size: 30px;
+    transition: 1s;
+    cursor: pointer;
+    display: block;
+}
+
+.sub-social .fa{
+    color: #ffffff;
+    padding: 0 20px;
+    font-size: 30px;
+    transition: 1s;
+    cursor: pointer;
+    display: block;
+}
+
+.social .fa:hover{
+    color: #76b5c5;
+}
+
+.sub-social .fa:hover{
+    color: #76b5c5;
+}
+
+#hamburger-menu{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    width: 35px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    z-index: 999;
+    opacity: 0;
+}
+
+.bar {
+    background: #edf2f8;
+    width: 100%;
+    height: 3px;
+    border-radius: .8rem;
+    -webkit-transition: all 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out;
+    z-index: 2;
+}
+
+/*---- comedy ----*/
+
+.comedy{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.comedy-col{
+    flex-basis: 20%;
+    background: #76b5c5;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: .5s;
+}
+.comedy-col h3{
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.comedy-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,.7);
+}
+
+/*---- About ----*/
+
+.about{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.about h1{
+    font-size: 45px;
+    font-weight: 500;
+    padding-top: 80px;
+}
+
+.about-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-col img{
+    width: 100%;
+    display: block;
+}
+
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .5s;
+}
+
+.layer:hover{
+    background: rgba(118,181,197,.6);
+    cursor: pointer;
+}
+
+.layer h3{
+    color: #ffffff;
+    width: 100%;
+    font-weight: 500;
+    font-size: 28px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: .5s;
+}
+
+.layer:hover h3{
+    bottom: 80%;
+    opacity: 1;
+}
+
+.layer p{
+    color: #ffffff;
+    width: 90%;
+    font-weight: 500;
+    font-size: 16px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 1.2s;
+}
+
+.layer:hover p{
+    bottom: 13%;
+    opacity: 1;
+}
+
+.shows-col{
+    width: 80%;
+    margin: auto;
+}
+
+.shows h1{
+    font-size: 45px;
+    font-weight: 500;
+    padding-top: 80px;
+}
+
+.shows{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+/*--- Vidoes ---*/
+
+.videos{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.videos h1{
+    font-size: 45px;
+    font-weight: 500;
+    padding-top: 80px;
+    padding-bottom: 65px;
+}
+
+.videos-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.videos-grid{
+    justify-content: center;
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.videos-grid iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*--- Contact ---*/
+
+.contact{
+    width: 80%;
+    margin: auto;
+}
+
+.contact h1{
+    font-size: 45px;
+    font-weight: 500;
+    padding-top: 80px;
+    text-align: center;
+}
+
+.contact-col{
+    flex-basis: 44%;
+}
+
+.contact-col img{
+    width: 100%;
+}
+
+.comment-box{
+    border: 1px solid #ccc;
+    margin: 50px 0;
+    padding: 20px 20px;
+}
+
+.comment-form input, .comment-form textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    background: #f0f0f0;
+}
+
+.comment-form label{
+    display: block;
+}
+
+.aqua-btn{
+    border: 1px solid #76b5c5;
+    background: transparent;
+    color: #76b5c5;
+}
+
+.aqua-btn:hover{
+    color: #ffffff;
+}
+
+/*--- Footer ---*/
+.footer{
+    background: #76b5c5;
+    margin-top: 70px;
+    width: 100%;
+}
+
+.footer p{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+/*--- Media Queries ---*/
+
+@media only screen and (max-width: 769px) {
+    .text-box h1{
+        font-size: 35px;
+        line-height: 45px;
+    }
+
+    .text-box p{
+        font-size: 16px;
+    }
+
+    .social{
+        justify-content: center;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        text-align: center;
+    }
+    
+    .sub-social{
+        justify-content: center;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        text-align: center;
+    }
+
+    .row{
+        flex-direction: column;
+    }
+
+    /* .about{
+        display: flex;
+        flex-direction: column;
+    } */
+
+    .about h1{
+        font-size: 30px;
+        font-weight: 500;
+        padding-top: 30px;
+    }
+    
+    .videos h1{
+        font-size: 30px;
+        font-weight: 500;
+        padding-top: 30px;
+    }
+
+    .grid-col-span-2{
+        grid-column: span 2;
+        gap: 20px;
+    }
+
+    .shows h1{
+        font-size: 30px;
+        font-weight: 500;
+        padding-top: 30px;
+    }
+
+    .contact h1{
+        font-size: 30px;
+        font-weight: 500;
+        padding-top: 30px;
+    }
+
+    #hamburger-menu{
+        opacity: 1;
+    }
+
+    #hamburger-menu.active .bar:nth-child(1){
+        transform: translateY(11px) rotate(405deg);
+    }
+    
+    #hamburger-menu.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    
+    #hamburger-menu.active .bar:nth-child(3){
+        transform: translateY(-11px) rotate(-405deg);
+    }
+
+    .nav-menu{
+        position: fixed;
+        right: -100%;
+        top: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background-color: #76b5c5;
+        width: 100%;
+        text-align: center;
+        transition: .3s ease;
+        z-index: 1;
+    }
+
+    .nav-item{
+        margin-top: 15px;
+    }
+
+    .nav-menu.active{
+        right: 0;
+    }
+
+    .sub-social{
+        width: 90%;
+        display: flex;
+        position: absolute;
+        top: 70%;
+        justify-content: end;
+    }
+
+    .footer .footer-text{
+        font-size: 18px;
+    }
+}

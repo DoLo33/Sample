@@ -7,7 +7,7 @@
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,.7), rgba(4,9,30,.7)), url("../photos/Max4.jpeg");
+    background-image: linear-gradient(rgba(4,9,30,.7), rgba(4,9,30,.7)), url("/photos/Max4.jpeg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -18,7 +18,7 @@
     height: 80vh;
     width: 100%;
     background-image: linear-gradient(rgba(4,9,30,.5), rgba(4,9,30,.5)), url(
-    "../photos/Max7.jpeg");
+    "/photos/Max7.jpeg");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -198,6 +198,7 @@ nav img{
     padding: 20px 12px;
     box-sizing: border-box;
     transition: .5s;
+    color: white;
 }
 .comedy-col h3{
     font-weight: 600;
@@ -222,69 +223,56 @@ nav img{
     padding-top: 80px;
 }
 
-.about-col{
-    flex-basis: 32%;
-    border-radius: 10px;
-    margin-bottom: 30px;
-    position: relative;
-    overflow: hidden;
+.profile-main{
+    text-align: left;
+    padding-left: 2em;
 }
 
-.about-col img{
-    width: 100%;
+.profile-sidebar img{
+    width: 200px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.profile-name{
+    font-size: 2rem;
+    line-height: 1.1;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.profile-name::after{
+    content: '';
     display: block;
+    height: 1.5px;
+    width: 90px;
+    background: white;
+    opacity: .6;
+    margin-top: 0.6em;
+    margin-bottom: 0.6em;
 }
 
-.layer{
-    background: transparent;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: .5s;
+.profile-position{
+    font-size: 1rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 2em;
 }
 
-.layer:hover{
-    background: rgba(118,181,197,.6);
-    cursor: pointer;
+.profile-body{
+    font-weight: 300;
 }
 
-.layer h3{
-    color: #ffffff;
-    width: 100%;
-    font-weight: 500;
-    font-size: 28px;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    position: absolute;
-    opacity: 0;
-    transition: .5s;
+.card{
+    box-shadow: 0 0 20px rgba(0,0,0,.4);
+    display: flex;
+    background: #76b5c5;;
+    color: white;
+    padding: 2.5em;
 }
 
-.layer:hover h3{
-    bottom: 80%;
-    opacity: 1;
-}
-
-.layer p{
-    color: #ffffff;
-    width: 90%;
-    font-weight: 500;
-    font-size: 16px;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    position: absolute;
-    opacity: 0;
-    transition: 1.2s;
-}
-
-.layer:hover p{
-    bottom: 13%;
-    opacity: 1;
-}
+/*---- Shows ----*/
 
 .shows-col{
     width: 80%;
@@ -358,8 +346,9 @@ nav img{
     flex-basis: 44%;
 }
 
-.contact-col img{
+.contact_img{
     width: 100%;
+    border-radius: 50%;
 }
 
 .comment-box{
@@ -440,15 +429,22 @@ nav img{
         flex-direction: column;
     }
 
-    /* .about{
-        display: flex;
-        flex-direction: column;
-    } */
-
     .about h1{
         font-size: 30px;
         font-weight: 500;
         padding-top: 30px;
+    }
+
+    .card{
+        flex-direction: column;
+    }
+
+    .profile-main{
+        text-align: center;
+    }
+
+    .profile-name::after{
+        margin: 0.6em auto;
     }
     
     .videos h1{

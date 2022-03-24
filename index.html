@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Max Dolcelli's Home Page</title>
-    <link rel="stylesheet" type="text/css" href="./styles/max.css">
+    <link rel="stylesheet" type="text/css" href="/styles/max.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
@@ -17,7 +17,7 @@
 
     <section class="header">
         <nav>
-            <a href="index.html"><img id="max_logo" src="./photos/max_logo.png" alt="Max Dolcelli Logo"></a>
+            <a href="index.html"><img id="max_logo" src="/photos/max_logo.png" alt="Max Dolcelli Logo"></a>
 
             <div class="nav-links">
                 <ul class="nav-menu">
@@ -38,7 +38,12 @@
         <div class="text-box">
             <h1>COMEDIAN<br>MAX DOLCELLI</h1>
             <p>Birthday Parties & Weddings / Private Parties / Corporate Events / Fundraisers</p>
-            <a href="about.html" class="hero-btn">About Max</a>
+            <div>
+                <a href="about.html" class="hero-btn abt_max_btn">About Max</a>
+            </div>
+            <div>
+                <a href="contact.html" class="hero-btn">Book Max TODAY!!</a>
+            </div>
         </div>
 
         <div class="social">
@@ -53,33 +58,40 @@
 
     <section class="comedy">
 
-        <div class="row">
-            <div class="comedy-col">
-                <h3>Birthday Parties & Weddings</h3>
+        <div class="container">
+
+            <div class="card-home">
+                <div class="card-image bday">
+                </div>
+                <h2>Birthdays &#38; Weddings</h2>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia in optio, ut dolorem sed quisquam
-                    nobis iure quaerat sequi maiores corporis, dolores libero eos asperiores animi itaque. Corrupti,
-                    iste dicta.</p>
+                    nobis iure quaerat sequi maiores corporis, dolores libero eos asperiores animi</p>
             </div>
-            <div class="comedy-col">
-                <h3>Private Parties</h3>
+
+            <div class="card-home">
+                <div class="card-image reserved">
+                </div>
+                <h2>Private Parties</h2>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia in optio, ut dolorem sed quisquam
-                    nobis iure quaerat sequi maiores corporis, dolores libero eos asperiores animi itaque. Corrupti,
-                    iste dicta.</p>
+                    nobis iure quaerat sequi maiores corporis, dolores libero eos asperiores animi</p>
             </div>
-            <div class="comedy-col">
-                <h3>Corporate Events</h3>
+
+            <div class="card-home">
+                <div class="card-image fundraiser">
+                </div>
+                <h2>Fundraisers</h2>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia in optio, ut dolorem sed quisquam
-                    nobis iure quaerat sequi maiores corporis, dolores libero eos asperiores animi itaque. Corrupti,
-                    iste dicta.</p>
+                    nobis iure quaerat sequi maiores corporis, dolores libero eos asperiores animi</p>
             </div>
-            <div class="comedy-col">
-                <h3>Fundraisers</h3>
+
+            <div class="card-home">
+                <div class="card-image corporate">
+                </div>
+                <h2>Corporate Events</h2>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia in optio, ut dolorem sed quisquam
-                    nobis iure quaerat sequi maiores corporis, dolores libero eos asperiores animi itaque. Corrupti,
-                    iste dicta.</p>
+                    nobis iure quaerat sequi maiores corporis, dolores libero eos asperiores animi</p>
             </div>
         </div>
-
     </section>
 
     <!----- Footer ----->
@@ -89,7 +101,7 @@
         </p>
     </section>
 
-    <script src="./javascript/max.js"></script>
+    <script src="/javascript/max.js"></script>
     <script src="https://kit.fontawesome.com/ec2129c2b4.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js"
         integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>

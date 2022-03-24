@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Max Dolcelli's Home Page</title>
-    <link rel="stylesheet" type="text/css" href="./styles/max.css">
+    <link rel="stylesheet" type="text/css" href="/styles/max.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
@@ -17,7 +17,7 @@
 
     <section class="sub-header">
         <nav>
-            <a href="index.html"><img id="max_logo" src="./photos/max_logo.png" alt="Max Dolcelli Logo"></a>
+            <a href="index.html"><img id="max_logo" src="/photos/max_logo.png" alt="Max Dolcelli Logo"></a>
 
             <div class="nav-links">
                 <ul class="nav-menu">
@@ -51,29 +51,98 @@
 
     <section class="contact">
         <h1>Get in touch with Max</h1>
-        <div class="row">
-            <div class="contact-col">
-                <img src="./photos/Max7_crop.jpg" class="contact_img" alt="Photo of Max Dolcelli">
-            </div>
-            <div class="comment-box contact-col">
-                <form action="" class="comment-form">
-                    <input type="text" placeholder="Enter Name" required>
-                    <input type="email" placeholder="Enter Email" required>
-                    <label for="">Event Type</label>
-                    <select name="" id="">
-                        <option value="">Birthday Party</option>
-                        <option value="">Wedding</option>
-                        <option value="">Private Party</option>
-                        <option value="">Corporate Event</option>
-                        <option value="">Fundraiser</option>
-                        <option value="">Other</option>
-                    </select>
-                    <textarea rows="10" placeholder="Your Comment"></textarea>
+        <!-- 
+        <div class="containter_contact_form">
+            <div class="form">
 
-                    <button type="submit" class="hero-btn aqua-btn">SUBMIT</button>
-                </form>
+                <div class="contact_info">
+                    <div class="cta">
+                        <div class="pic">
+                            <img src="photos/Max1_crop.jpg" alt="Photo of Max">
+                        </div>
+
+                        <div class="cta_text">
+                            <h3 class="title">Book Max Now!!</h3>
+                            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
+                                recusandae
+                                aliquam. Quos, ut accusamus!</p>
+                        </div>
+                    </div>
+
+                    <div class="info">
+                        <div class="information">
+                            <i class="fa fa-home icon"></i>
+                            <p>456 Alphabet Drive, Los Angeles, CA 77777</p>
+                        </div>
+                        <div class="information">
+                            <i class="fa fa-envelope icon"></i>
+                            <p>comedyhell@gmail.com</p>
+                        </div>
+                        <div class="information">
+                            <i class="fa fa-mobile icon"></i>
+                            <p>(222) 222-2222</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact_form">
+                    <span class="circle one"></span>
+                    <span class="circle two"></span>
+                    <form action="">
+                        <h3 class="title">Message Me</h3>
+                        <div class="input_container">
+                            <input type="text" id="username" name="username" class="input" placeholder="" required>
+                            <label for="username" class="inlay">Name</label>
+                            <span class="anime">Name</span>
+                        </div>
+
+                        <div class="input_container">
+                            <input type="email" id="email_address" name="email_address" class="input" placeholder=""
+                                required>
+                            <label for="email_address" class="inlay">Email</label>
+                            <span class="anime">Email</span>
+                        </div>
+
+                        <div class="input_container">
+                            <select name="events" id="" class="input" required>
+                                <option value="">Birthday Party</option>
+                                <option value="">Wedding</option>
+                                <option value="">Private Party</option>
+                                <option value="">Corporate Event</option>
+                                <option value="">Fundraiser</option>
+                                <option value="">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="input_container">
+                            <textarea rows="8" id="user_message" name="user_message" class="input" placeholder=""
+                                required></textarea>
+                            <label for="user_message" class="inlay">Message</label>
+                            <span class="anime">Message</span>
+                        </div>
+
+                        <button type="submit" value="Send" class="btn">SUBMIT</button>
+                    </form>
+
+                </div>
+            </div>
+        </div> -->
+
+        <div class="contact_card_wrapper">
+            <div class="left_side half">
+                <img src="./photos/Max9_crop.jpg" alt="Max background image" class="left_bkgd">
+            </div>
+
+            <div class="right_side half">
+                <img src="./photos/Max1_crop.jpg" alt="Profile image" class="profile_img">
+
+                <p><i class="fa fa-building contact_icon" aria-hidden="true"></i>456 Alphabet Drive, Los Angeles,
+                    CA 77777</p>
+                <p><i class="fa fa-phone-square contact_icon" aria-hidden="true"></i>(222) 222-2222</p>
+                <p><i class="fa fa-envelope contact_icon" aria-hidden="true"></i>comedyhell@gmail.com</p>
             </div>
         </div>
+
     </section>
 
     <!----- Footer ----->
@@ -83,7 +152,7 @@
         </p>
     </section>
 
-    <script src="./javascript/max.js"></script>
+    <script src="/javascript/max.js"></script>
     <script src=" https://kit.fontawesome.com/ec2129c2b4.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js"
         integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
